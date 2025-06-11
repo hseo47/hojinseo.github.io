@@ -5,6 +5,24 @@
   height: auto;
 }
 
+.social-icons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  margin: 0 12px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
