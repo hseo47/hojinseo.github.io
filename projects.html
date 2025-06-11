@@ -4,35 +4,6 @@
   <meta charset="UTF-8">
   <title>Projects – Hojin Seo</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .project-section {
-      padding: 2rem 0;
-      text-align: center;
-    }
-
-    .project-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .project-box {
-      width: 220px;
-      height: 160px;
-      background-color: #ffffff;
-      border: 2px solid #cc0066;
-      box-sizing: border-box;
-    }
-
-    .project-label {
-      font-style: italic;
-      text-align: left;
-      max-width: 720px;
-      margin: 2rem auto 0.5rem auto;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -58,16 +29,48 @@
       <div class="project-grid">
         <div class="project-box"></div>
 
-        <div class="project-box">
-        <img src="EMBC.png" alt="EMBC Design" class="project-img">
+        <div class="project-box" onclick="openModal()">
+          <img src="EMBC.png" alt="EMBC Design" class="project-img">
         </div>
-        
+
         <div class="project-box"></div>
       </div>
     </section>
   </main>
 
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Inverse Kinematics of a Parallel Mechanism</h2>
+      <p><strong>IEEE EMBC 2021</strong></p>
+      <p>This project introduces a novel 3SPS-S-3RRR parallel mechanism for upper-limb prosthetic wrists. Unlike traditional designs, our offset Kresling-inspired structure generates rotational wrist motion mechanically—eliminating the need for extra motors.</p>
+      <p>We used Denavit–Hartenberg parameters and screw theory to derive both forward and inverse kinematics. The combined system achieves quasi-spherical mobility while remaining lightweight and tendon-driven, ideal for amputees with trans-radial loss.</p>
+      <p>Our early-stage control strategy links motion capture and surface electromyography (sEMG) to regress natural user input into trajectory commands.</p>
+    </div>
+  </div>
+
   <footer>
+    <p>&copy; 2025 Hojin Seo</p>
+  </footer>
+
+  <script>
+    function openModal() {
+      document.getElementById("projectModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("projectModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("projectModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>
     <p>&copy; 2025 Hojin Seo</p>
   </footer>
 </body>
