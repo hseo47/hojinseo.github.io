@@ -37,10 +37,10 @@
 }
 
 .project-label {
-  font-style: bold;
+  font-weight: bold;     
   text-align: left;
   max-width: 720px;
-  margin: 2rem auto 0.5rem auto;
+  margin: 1rem auto 0.3rem auto; 
 }
 
 /* Modal styles */
