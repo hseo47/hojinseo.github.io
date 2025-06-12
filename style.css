@@ -37,7 +37,7 @@
 }
 
 .project-label {
-  font-style: italic;
+  font-style: bold;
   text-align: left;
   max-width: 720px;
   margin: 2rem auto 0.5rem auto;
