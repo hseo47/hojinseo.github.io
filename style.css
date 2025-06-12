@@ -1,4 +1,13 @@
 .hydro-header-box {
+  font-weight: bold;
+}
+
+.hydro-header-box {
+  border: 2px solid #3f3d56;
+  color: #3f3d56;
+}
+
+.hydro-header-box {
   border: 2px solid #cc0066;
   padding: 1rem;
   margin: 2rem auto 1rem auto;
