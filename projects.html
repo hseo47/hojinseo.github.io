@@ -17,11 +17,6 @@
   </header>
 
   <main>
-    <!-- Hydro-Softening Intro Modal Trigger -->
-    <div class="hydro-header-box" onclick="openModal4()">
-      Hydro-Softening Projects – Learn More
-    </div>
-
     <!-- Current Projects -->
     <section class="project-section">
       <div class="project-label">Current Projects (2023~Current):</div>
@@ -29,6 +24,11 @@
         <div class="project-box"></div>
         <div class="project-box"></div>
         <div class="project-box"></div>
+      </div>
+
+      <!-- Hydro-Softening Intro Modal Trigger (moved here) -->
+      <div class="hydro-header-box" onclick="openModal4()">
+        Hydro-Softening Projects – Learn More
       </div>
     </section>
 
@@ -54,7 +54,7 @@
     </section>
   </main>
 
-  <!-- EMBC Modal -->
+  <!-- Modals -->
   <div id="projectModal" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal()">&times;</span>
@@ -71,7 +71,6 @@
     </div>
   </div>
 
-  <!-- Flexible Sensing Modal -->
   <div id="projectModal2" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal2()">&times;</span>
@@ -87,7 +86,6 @@
     </div>
   </div>
 
-  <!-- Tendon Robot Modal -->
   <div id="projectModal3" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal3()">&times;</span>
@@ -100,7 +98,6 @@
     </div>
   </div>
 
-  <!-- Hydro-Softening Modal -->
   <div id="projectModal4" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal4()">&times;</span>
@@ -117,31 +114,24 @@
     function openModal() {
       document.getElementById("projectModal").style.display = "block";
     }
-
     function closeModal() {
       document.getElementById("projectModal").style.display = "none";
     }
-
     function openModal2() {
       document.getElementById("projectModal2").style.display = "block";
     }
-
     function closeModal2() {
       document.getElementById("projectModal2").style.display = "none";
     }
-
     function openModal3() {
       document.getElementById("projectModal3").style.display = "block";
     }
-
     function closeModal3() {
       document.getElementById("projectModal3").style.display = "none";
     }
-
     function openModal4() {
       document.getElementById("projectModal4").style.display = "block";
     }
-
     function closeModal4() {
       document.getElementById("projectModal4").style.display = "none";
     }
