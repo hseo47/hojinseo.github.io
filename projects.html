@@ -29,9 +29,12 @@
 
     <!-- Past Projects -->
     <section class="project-section">
-      <div class="project-label">Past Projects (2020~2022):</div>
+      <div class="project-label">Past projects (2020~2022):</div>
       <div class="project-grid">
-        <div class="project-box"></div>
+        <!-- Tendon Robot -->
+        <div class="project-box" onclick="openModal3()">
+          <img src="Tendon Robot.png" alt="Tendon Robot" class="project-img">
+        </div>
 
         <!-- EMBC Project -->
         <div class="project-box" onclick="openModal()">
@@ -79,6 +82,17 @@
     </div>
   </div>
 
+  <!-- Tendon Robot Modal -->
+  <div id="projectModal3" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal3()">&times;</span>
+      <h2>Underactuated Tendon-Driven Robotic Arm</h2>
+      <p><strong>Text goes here</strong></p>
+      <p>Text goes here</p>
+      <p>Text goes here</p>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Hojin Seo</p>
   </footer>
@@ -100,11 +114,21 @@
       document.getElementById("projectModal2").style.display = "none";
     }
 
+    function openModal3() {
+      document.getElementById("projectModal3").style.display = "block";
+    }
+
+    function closeModal3() {
+      document.getElementById("projectModal3").style.display = "none";
+    }
+
     window.onclick = function(event) {
       const modal1 = document.getElementById("projectModal");
       const modal2 = document.getElementById("projectModal2");
+      const modal3 = document.getElementById("projectModal3");
       if (event.target === modal1) closeModal();
       if (event.target === modal2) closeModal2();
+      if (event.target === modal3) closeModal3();
     };
   </script>
 </body>
