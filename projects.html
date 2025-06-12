@@ -17,6 +17,11 @@
   </header>
 
   <main>
+    <!-- Hydro-Softening Intro Modal Trigger -->
+    <div class="hydro-header-box" onclick="openModal4()">
+      Hydro-Softening Projects – Learn More
+    </div>
+
     <!-- Current Projects -->
     <section class="project-section">
       <div class="project-label">Current Projects (2023~Current):</div>
@@ -95,6 +100,15 @@
     </div>
   </div>
 
+  <!-- Hydro-Softening Modal -->
+  <div id="projectModal4" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal4()">&times;</span>
+      <h2>Hydro-Softening: A Bioinspired Platform for Soft Materials</h2>
+      <p>Text goes here — overview of hydro-softening, concept, impact, etc.</p>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Hojin Seo</p>
   </footer>
@@ -124,13 +138,25 @@
       document.getElementById("projectModal3").style.display = "none";
     }
 
+    function openModal4() {
+      document.getElementById("projectModal4").style.display = "block";
+    }
+
+    function closeModal4() {
+      document.getElementById("projectModal4").style.display = "none";
+    }
+
     window.onclick = function(event) {
-      const modal1 = document.getElementById("projectModal");
-      const modal2 = document.getElementById("projectModal2");
-      const modal3 = document.getElementById("projectModal3");
-      if (event.target === modal1) closeModal();
-      if (event.target === modal2) closeModal2();
-      if (event.target === modal3) closeModal3();
+      const modals = [
+        "projectModal",
+        "projectModal2",
+        "projectModal3",
+        "projectModal4"
+      ];
+      modals.forEach(id => {
+        const modal = document.getElementById(id);
+        if (event.target === modal) modal.style.display = "none";
+      });
     };
   </script>
 </body>
