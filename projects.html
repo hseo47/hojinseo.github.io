@@ -29,15 +29,20 @@
       <div class="project-grid">
         <div class="project-box"></div>
 
+        <!-- EMBC Project -->
         <div class="project-box" onclick="openModal()">
           <img src="EMBC.png" alt="EMBC Design" class="project-img">
         </div>
 
-        <div class="project-box"></div>
+        <!-- Flexible Sensing System Project -->
+        <div class="project-box" onclick="openModal2()">
+          <img src="Flexible Sensing System.png" alt="Flexible Sensor" class="project-img">
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- EMBC Modal -->
   <div id="projectModal" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal()">&times;</span>
@@ -46,12 +51,25 @@
       <p>This project introduces a parallel mechanism for upper-limb prosthetic wrists. Our offset Kresling-origami-inspired structure generates rotational wrist motion passively, reducing the number of actuators.</p>
       <p>In this work, we employed screw theory to derive both its forward and inverse kinematics. The system achieves quasi-spherical mobility while remaining lightweight and tendon-driven, ideal for amputees with trans-radial loss.</p>
       <p>For more information, please refer to our <a href="seo2021.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">peer-reviewed proceedings article</a>.</p>
-
       <div class="modal-image-row">
         <img src="EMBC1.PNG" alt="EMBC Front View" class="modal-img">
         <img src="EMBC2.PNG" alt="EMBC Exploded View" class="modal-img">
       </div>
-    
+    </div>
+  </div>
+
+  <!-- Flexible Sensing Modal -->
+  <div id="projectModal2" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal2()">&times;</span>
+      <h2>Flexible Sensing System for Biomedical Monitoring</h2>
+      <p><strong>Text goes here</strong></p>
+      <p>Text goes here</p>
+      <p>Text goes here</p>
+      <div class="modal-image-row">
+        <img src="Pressure Sensor.png" alt="Pressure Sensor" class="modal-img">
+        <img src="Parylene.png" alt="Parylene Encapsulation" class="modal-img">
+      </div>
     </div>
   </div>
 
@@ -68,11 +86,20 @@
       document.getElementById("projectModal").style.display = "none";
     }
 
+    function openModal2() {
+      document.getElementById("projectModal2").style.display = "block";
+    }
+
+    function closeModal2() {
+      document.getElementById("projectModal2").style.display = "none";
+    }
+
     window.onclick = function(event) {
-      const modal = document.getElementById("projectModal");
-      if (event.target === modal) {
-        closeModal();
-      }
+      const modal1 = document.getElementById("projectModal");
+      const modal2 = document.getElementById("projectModal2");
+      if (event.target === modal1) closeModal();
+      if (event.target === modal2) closeModal2();
     };
   </script>
+</body>
 </html>
