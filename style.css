@@ -103,8 +103,7 @@ nav a:hover {
 /* Project Images */
 .project-img {
   width: 100%;
-  height: auto;
-  max-height: 250px;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
