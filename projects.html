@@ -20,13 +20,19 @@
     <!-- Current Projects -->
     <section class="project-section">
       <div class="project-label">Current Projects (2023~Current):</div>
-      <div class="hydro-header-box" onclick="openModal4()">
+      <div class="hydro-header-box">
         Hydro-Softening
       </div>
       <div class="project-grid">
-        <div class="project-box"></div>
-        <div class="project-box"></div>
-        <div class="project-box"></div>
+        <div class="project-box" onclick="openModal5()">
+          <img src="Hydro Softening Applied.png" alt="Hydro Softening Applied" class="project-img">
+        </div>
+        <div class="project-box" onclick="openModal6()">
+          <img src="Biological Implications of Hydro Softening.png" alt="Biological Implications of Hydro Softening" class="project-img">
+        </div>
+        <div class="project-box" onclick="openModal7()">
+          <img src="AQUA.png" alt="AQUA" class="project-img">
+        </div>
       </div>
     </section>
 
@@ -34,17 +40,12 @@
     <section class="project-section">
       <div class="project-label">Past Projects (2020~2022):</div>
       <div class="project-grid">
-        <!-- Tendon Robot -->
         <div class="project-box" onclick="openModal3()">
           <img src="Tendon Robot.png" alt="Tendon Robot" class="project-img">
         </div>
-
-        <!-- EMBC Project -->
         <div class="project-box" onclick="openModal()">
           <img src="EMBC.png" alt="EMBC Design" class="project-img">
         </div>
-
-        <!-- Flexible Sensing System Project -->
         <div class="project-box" onclick="openModal2()">
           <img src="Flexible Sensing System.png" alt="Flexible Sensor" class="project-img">
         </div>
@@ -101,8 +102,32 @@
       <span class="close-button" onclick="closeModal4()">&times;</span>
       <h2>Hydro-Softening</h2>
       <p><strong>A Bio-Inspired Platform for Soft Materials</strong></p>
-      <p>What does your morning look like? A cup of coffee? A hot shower? Well, that’s certainly what mine looks like, followed by a curated three-step skincare routine as soon as I step out of that steamy shower. You see, it’s nice to have hydrated skin. A properly hydrated skin is soft and elastic to the touch. But have you ever wondered, “what makes hydrated skin so soft and tender”? After all, hydrated skin isn’t wet skin. So why do we call it hydrated skin, and what happens to the water as it holds space in our skin?<p>
+      <p>What does your morning look like? A cup of coffee? A hot shower? Well, that’s certainly what mine looks like, followed by a curated three-step skincare routine as soon as I step out of that steamy shower. You see, it’s nice to have hydrated skin. A properly hydrated skin is soft and elastic to the touch. But have you ever wondered, “what makes hydrated skin so soft and tender”? After all, hydrated skin isn’t wet skin. So why do we call it hydrated skin, and what happens to the water as it holds space in our skin?</p>
       <p>The inspiration for hydro-softening comes from the hydration-softening mechanism of the mammalian skin, a naturally soft yet mechanically resilient biomaterial.</p>
+    </div>
+  </div>
+
+  <div id="projectModal5" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal5()">&times;</span>
+      <h2>Hydro Softening, Applied</h2>
+      <p><strong>Stay tuned in for more information!<strong></p>
+    </div>
+  </div>
+
+  <div id="projectModal6" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal6()">&times;</span>
+      <h2>Biological Implications of Hydro Softening</h2>
+      <p><strong>Stay tuned in for more information!<strong></p>
+    </div>
+  </div>
+
+  <div id="projectModal7" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal7()">&times;</span>
+      <h2>AQUA</h2>
+      <p><strong>Stay tuned in for more information!<strong></p>
     </div>
   </div>
 
@@ -111,37 +136,31 @@
   </footer>
 
   <script>
-    function openModal() {
-      document.getElementById("projectModal").style.display = "block";
-    }
-    function closeModal() {
-      document.getElementById("projectModal").style.display = "none";
-    }
-    function openModal2() {
-      document.getElementById("projectModal2").style.display = "block";
-    }
-    function closeModal2() {
-      document.getElementById("projectModal2").style.display = "none";
-    }
-    function openModal3() {
-      document.getElementById("projectModal3").style.display = "block";
-    }
-    function closeModal3() {
-      document.getElementById("projectModal3").style.display = "none";
-    }
-    function openModal4() {
-      document.getElementById("projectModal4").style.display = "block";
-    }
-    function closeModal4() {
-      document.getElementById("projectModal4").style.display = "none";
-    }
+    function openModal() { document.getElementById("projectModal").style.display = "block"; }
+    function closeModal() { document.getElementById("projectModal").style.display = "none"; }
+
+    function openModal2() { document.getElementById("projectModal2").style.display = "block"; }
+    function closeModal2() { document.getElementById("projectModal2").style.display = "none"; }
+
+    function openModal3() { document.getElementById("projectModal3").style.display = "block"; }
+    function closeModal3() { document.getElementById("projectModal3").style.display = "none"; }
+
+    function openModal4() { document.getElementById("projectModal4").style.display = "block"; }
+    function closeModal4() { document.getElementById("projectModal4").style.display = "none"; }
+
+    function openModal5() { document.getElementById("projectModal5").style.display = "block"; }
+    function closeModal5() { document.getElementById("projectModal5").style.display = "none"; }
+
+    function openModal6() { document.getElementById("projectModal6").style.display = "block"; }
+    function closeModal6() { document.getElementById("projectModal6").style.display = "none"; }
+
+    function openModal7() { document.getElementById("projectModal7").style.display = "block"; }
+    function closeModal7() { document.getElementById("projectModal7").style.display = "none"; }
 
     window.onclick = function(event) {
       const modals = [
-        "projectModal",
-        "projectModal2",
-        "projectModal3",
-        "projectModal4"
+        "projectModal", "projectModal2", "projectModal3", "projectModal4",
+        "projectModal5", "projectModal6", "projectModal7"
       ];
       modals.forEach(id => {
         const modal = document.getElementById(id);
