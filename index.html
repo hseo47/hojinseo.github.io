@@ -2,45 +2,267 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hojin Seo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260821-7">
   <link rel="icon" href="myfavicon.png" type="image/png">
 </head>
 <body>
-  <header>
-    <h1>Hojin Seo</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="learn.html">Learn</a>
-      <a href="projects.html">Projects</a>
-      <a href="mailto:hseo47@gatech.edu">Contact</a>
-    </nav>
-  </header>
-
   <main>
-    <img src="Headshot.png" alt="Hojin Seo" class="headshot">
+    <section class="project-section">
+      <img src="Headshot.png" alt="Hojin Seo" class="headshot">
+      <h1 class="profile-name">Hojin Seo</h1>
+      <h2>Welcome!</h2>
+      <p>My name is Hojin, and I am at Georgia Tech. I am focused on bridging soft matter science with pressing biomedical needs through our flagship hydro-softened materials. Hydro-softening is a bio-inspired mechanical softening effect driven by the spatial organization of water within free volume domains, enabled by directional steric confinement. Prior to hydro-softening, I worked on robotics systems, wearable systems, and more. This online portfolio showcases my most recent publications.</p>
+    </section>
 
-    <section>
-      <h2>Welcome! The website is currently under construction.</h2>
-      <p><strong>The projects tab is now LIVE!</strong></p>
-      <p>My name is Hojin, and I am at Georgia Tech. I am focused on bridging soft matter science with pressing biomedical needs through our flagship hydro-softened materials. Hydro-softening is a bio-inspired mechanical softening effect driven by the spatial organization of water within free volume domains, enabled by directional steric confinement. This online portfolio showcases my current projects and publications in review.</p>
+    <!-- Projects -->
+    <section class="project-section">
+      <div class="project-label">Projects:</div>
+      <div class="project-list">
+        <article class="project-row" onclick="openModal4()">
+          <div class="project-row-media">
+            <img src="HS.png" alt="Hydro-Softening" class="project-row-image project-row-image-cover">
+          </div>
+          <div class="project-row-copy">
+            <h2>Hydro-Softening: A Bio-Inspired Narrative</h2>
+            <p>A bio-inspired platform translating hydration-mediated softening into engineered material systems.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+        <article class="project-row" onclick="openModal5()">
+          <div class="project-row-media">
+            <img src="Hydro Softening Applied.png" alt="Hydro-Softening, Applied" class="project-row-image">
+          </div>
+          <div class="project-row-copy">
+            <h2>Hydro-Softening</h2>
+            <p>Extending hydro-softening from its fundamental mechanism toward practical material applications.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+        <article class="project-row" onclick="openModal6()">
+          <div class="project-row-media">
+            <img src="Biological Implications of Hydro Softening.png" alt="Biological Implications of Hydro-Softening" class="project-row-image">
+          </div>
+          <div class="project-row-copy">
+            <h2>Biological Implications of Hydro-Softening</h2>
+            <p>How hydro-softened chitosan changes interfacial mechanics, surface energy, and cell adhesion.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+        <article class="project-row" onclick="openModal3()">
+          <div class="project-row-media">
+            <img src="Tendon Robot.png" alt="Tendon-Driven Robot for Transoral Surgery" class="project-row-image">
+          </div>
+          <div class="project-row-copy">
+            <h2>Tendon-Driven Robot for Transoral Surgery</h2>
+            <p>Quasi-static modeling and finite-element validation of a tendon-driven robotic unit for transoral surgery.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+        <article class="project-row" onclick="openModal()">
+          <div class="project-row-media">
+            <img src="EMBC.png" alt="Parallel Mechanism for Wrist Prosthetics Design" class="project-row-image">
+          </div>
+          <div class="project-row-copy">
+            <h2>Parallel Mechanism for Wrist Prosthetics Design</h2>
+            <p>An origami-inspired parallel mechanism for lightweight, passively rotating upper-limb prosthetic wrists.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+        <article class="project-row" onclick="openModal2()">
+          <div class="project-row-media">
+            <img src="Flexible Sensing System.png" alt="Flexible Sensing Systems for Biomedical Monitoring" class="project-row-image">
+          </div>
+          <div class="project-row-copy">
+            <h2>Flexible Sensing Systems for Biomedical Monitoring</h2>
+            <p>Flexible and stretchable sensing systems for continuous physiological monitoring.</p>
+            <span class="project-row-link">View project</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="conference-section" aria-labelledby="conferences-heading">
+      <div class="project-label" id="conferences-heading">Conferences:</div>
+      <div class="conference-map-stage">
+        <img src="conference-map.svg" alt="" class="conference-map-image">
+        <button type="button" class="conference-pin conference-pin-offset pin-label-left is-selected" style="--pin-x:93.43%;--pin-y:35.73%;--pin-offset-x:-20px;--pin-offset-y:-20px;--anchor-local-x:20px;--anchor-local-y:20px;--connector-angle:45deg;--connector-length:28.284px" data-city="Chicago" data-type="Oral" data-date="Aug 2026" data-title="Enable Flexible Chitosan Films via Hydro-Softening" data-event="ACS Fall Meeting" data-location="Chicago, USA" data-award="" aria-label="Chicago conference, Aug 2026" aria-pressed="true"><span>Chicago</span></button>
+        <button type="button" class="conference-pin conference-pin-offset" style="--pin-x:16.54%;--pin-y:45.82%;--pin-offset-x:-20px;--pin-offset-y:20px;--anchor-local-x:20px;--anchor-local-y:-20px;--connector-angle:-45deg;--connector-length:28.284px" data-city="Jeju" data-type="Oral" data-date="Nov 2024" data-title="Dynamic Substrate-Driven Reconfiguration of Polymers" data-event="2024 Korean Society of Biomaterials Fall Meeting &amp; Symposium" data-location="Jeju, South Korea" data-award="Outstanding Paper Award" aria-label="Jeju conference, Nov 2024" aria-pressed="false"><span>Jeju</span></button>
+        <button type="button" class="conference-pin pin-label-left" style="--pin-x:95.14%;--pin-y:45.52%" data-city="Atlanta" data-type="Poster" data-date="Sep 2024" data-title="Dynamic Reconfiguration of Antimicrobial Agents in Phase Transition" data-event="The 22nd International Society of Coating Science and Technology Symposium" data-location="Atlanta, USA" data-award="" aria-label="Atlanta conference, Sep 2024" aria-pressed="false"><span>Atlanta</span></button>
+        <button type="button" class="conference-pin conference-pin-offset" style="--pin-x:17.87%;--pin-y:43.80%;--pin-offset-x:25px;--pin-offset-y:-35px;--anchor-local-x:-25px;--anchor-local-y:35px;--connector-angle:125.538deg;--connector-length:43.012px" data-city="Busan" data-type="Poster" data-date="May 2023" data-title="Geometry-Optimized, All-Printed, Graphene Thin-Film Wearable Bio-Patch for Early Detection of Post-Surgical Hypertrophic Scars" data-event="33rd Anniversary World Congress on Biosensors" data-location="Busan, South Korea" data-award="" aria-label="Busan conference, May 2023" aria-pressed="false"><span>Busan</span></button>
+        <button type="button" class="conference-pin pin-label-left" style="--pin-x:85.14%;--pin-y:61.29%" data-city="Guadalajara" data-type="Oral" data-date="Nov 2021" data-title="Inverse Kinematics of a Parallel Mechanism with an Offset Structural Design for Prosthetic Wrist Motions" data-event="Annual International Conference of the IEEE Engineering in Medicine and Biology Society" data-location="Guadalajara, Mexico" data-award="" aria-label="Guadalajara conference, Nov 2021" aria-pressed="false"><span>Guadalajara</span></button>
+        <button type="button" class="conference-pin" style="--pin-x:23.48%;--pin-y:43.18%" data-city="Tokyo" data-type="Oral" data-date="Nov 2020" data-title="Quasi-Static Analysis of Transoral Surgical Tendon-Driven Articulated Robot Units" data-event="Asian Conference on Computer Aided Surgery (ACCAS)" data-location="Tokyo, Japan" data-award="" aria-label="Tokyo conference, Nov 2020" aria-pressed="false"><span>Tokyo</span></button>
+      </div>
+      <div class="conference-detail" id="conference-detail" aria-live="polite">
+        <div class="conference-detail-meta"><span id="conference-type">Oral</span><span id="conference-date">Aug 2026</span></div>
+        <div>
+          <h2 id="conference-title">Enable Flexible Chitosan Films via Hydro-Softening</h2>
+          <p><span id="conference-event">ACS Fall Meeting</span>, <span id="conference-location">Chicago, USA</span>.</p>
+          <p id="conference-award"></p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Modals -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Parallel Mechanism for Wrist Prosthetics Design</h2>
+      <p><strong>IEEE EMBC 2021</strong></p>
+      <p>This project introduces a parallel mechanism for upper-limb prosthetic wrists. Our offset Kresling-origami-inspired structure generates rotational wrist motion passively, reducing the number of actuators.</p>
+      <p>In this work, we employed screw theory to derive both its forward and inverse kinematics. The system achieves quasi-spherical mobility while remaining lightweight and tendon-driven, ideal for amputees with trans-radial loss.</p>
+      <p>This work was done under Prof. Woon-Hong Yeo’s supervision as part of the I2P coursework during my 2nd year as an undergraduate student.</p>
+      <p>For more information, please refer to our <a href="seo2021.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">peer-reviewed proceedings article</a>.</p>
+      <div class="modal-image-row">
+        <img src="EMBC1.PNG" alt="EMBC Front View" class="modal-img">
+        <img src="EMBC2.PNG" alt="EMBC Exploded View" class="modal-img">
+      </div>
+    </div>
+  </div>
+
+  <div id="projectModal2" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal2()">&times;</span>
+      <h2>Flexible Sensing Systems for Biomedical Monitoring</h2>
+      <p><strong>ACS Applied Electronic Materials 2022</strong></p>
+      <p>Under Prof. Woon-Hong Yeo’s supervision, I worked on various flexible and stretchable sensing systems for physiological monitoring. These projects include intracranial pressure sensing system, sweat-and-microfluidics-based ion selective sensing system, and wearable electromyogram (EMG) system.</p>
+      <p>In this highlighted work, we developed a flexible two-lead ECG sensing system, incorporating a breathable elastomer, designed for extended wear.</p>
+      <p>For more information, please refer to our <a href="rodeheaver2022.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">article</a>.</p>
+      <div class="modal-image-row">
+        <img src="Pressure Sensor.png" alt="Pressure Sensor" class="modal-img">
+        <img src="Parylene.png" alt="Parylene Encapsulation" class="modal-img">
+      </div>
+    </div>
+  </div>
+
+  <div id="projectModal3" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal3()">&times;</span>
+      <h2>Tendon-Driven Robot for Transoral Surgery</h2>
+      <p><strong>ACCAS 2020</strong></p>
+      <p>During my first year as an undergraduate student, I was stranded in South Korea due to the global pandemic. This led me to pursue an internship at the HEalthcare Automation and Robotics Technology Lab (HEART) at Asan Medical Center. At HEART, I focused on validating a continuum robot unit through both theoretical modeling and Finite Element Analysis.</p>
+      <p>In this work, we report on quasi-static analysis of a tendon-driven robotic unit designed for transoral surgical procedures. The aim was to determine internal pressure and rotation angles based on applied tension values, simulating force transmission across articulating modules.</p>
+      <p>The design was based on an equilibrium-based modeling of a tilted robotic segment subjected to friction, tension, and gravitational forces. Bisection method was used to perform angle convergence, yielding accurate predictions of angular displacement and pressure values during articulation.</p>
+      <p>For more information, please refer to our <a href="seo2020.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">proceedings article</a>.</p>
+    </div>
+  </div>
+
+  <div id="projectModal4" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal4()">&times;</span>
+      <h2>Hydro-Softening</h2>
+      <p><strong>A Bio-Inspired Platform for Soft Materials</strong></p>
+      <img src="HS.png" alt="Hydro-Softening Visual" class="modal-img" style="width:100%; margin-bottom: 1rem; border-radius: 12px;">
+      <p>Mornings often begin with routine comforts — a hot shower, perhaps a cup of coffee, and for many, a few steps of skincare. Hydrated skin, soft and supple to the touch, is often the goal. But what gives hydrated skin its characteristic softness? After all, hydration doesn’t mean the skin is wet. So where is the water, and how does it behave within the tissue? These questions point to the deeper material properties of mammalian skin — a naturally soft yet mechanically resilient structure. The concept of hydro-softening draws direct inspiration from this hydration-mediated softening mechanism.</p>
+    </div>
+  </div>
+
+  <div id="projectModal5" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal5()">&times;</span>
+      <h2>Hydro-Softening</h2>
+      <p>Under the supervision of Prof. Tequila A. L. Harris and equally contributed by Xiaoqing Yu, we investigated how non-apparent, interfacial hydration propagates to pronounced mechanical softness. Here, our work was inspired by interfacial hydration occurring in nature, and we attempted to replicate the same phenomenon with substrate-driven energetics.</p>
+      <p>As it turns out – mechanical softness and elastic moduli in synthetic polymer films can be modulated with interfacial water content, driven by substrate energetics. This work presents a passive and tunable methodology towards modulation of mechanical properties in polymeric films.</p>
+      <p>For more information, please find our <a href="seo_acs_2026.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">article on ACS Polymers Au (Open Access)</a>.</p>
+    </div>
+  </div>
+
+  <div id="projectModal6" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal6()">&times;</span>
+      <h2>Biological Implications of Hydro-Softening</h2>
+      <p>Under the supervision of Prof. Tequila A. L. Harris and in collaboration with Prof. Julie A. Champion’s research group, we investigated the biological implications of hydro-softening applied to chitosan. Our work was guided by a simple hypothesis: that nanoscale alterations in the material properties of hydro-softened chitosan are sufficient to modulate its interfacial characteristics and influence cell interactions.</p>
+      <p>It turns out that hydro-softening does, in fact, enhance cell adhesion. This enhancement arises from hydro-softening’s ability to induce both global and localized reductions in stiffness and surface energy without any chemical modification. By physically confining interfacial water, we demonstrate a passive, tunable, and spatially heterogeneous strategy for modulating interfacial bioactivity.</p>
+      <p>For more information, please find our <a href="seo_acs_2025.pdf" target="_blank" style="color:#cc0066; text-decoration:underline;">article on ACS Macro Letters (Open Access)</a>.</p>
+      <div class="modal-image-row">
+        <img src="Bacteria1.png" alt="Bacteria1" class="modal-img">
+        <img src="Bacteria2.png" alt="Bacteria2" class="modal-img">
+      </div>
+    </div>
+  </div>
+
   <div class="social-icons">
-  <a href="https://github.com/hseo47" target="_blank">
-    <img src="github.png" alt="GitHub" />
-  </a>
-  <a href="https://scholar.google.com/citations?user=FIkqZEMAAAAJ&hl=en" target="_blank">
-    <img src="scholar.png" alt="Google Scholar" />
-  </a>
-  <a href="https://www.linkedin.com/in/hojin-seo/" target="_blank">
-    <img src="linkedin.png" alt="LinkedIn" />
-  </a>
+    <a href="https://github.com/hseo47" target="_blank">
+      <img src="github.png" alt="GitHub" />
+    </a>
+    <a href="https://scholar.google.com/citations?user=FIkqZEMAAAAJ&hl=en" target="_blank">
+      <img src="scholar.png" alt="Google Scholar" />
+    </a>
+    <a href="https://www.linkedin.com/in/hojin-seo/" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn" />
+    </a>
   </div>
 
   <footer>
     <p>&copy; 2025 Hojin Seo</p>
   </footer>
+
+  <script>
+    function selectConferencePin(pin) {
+      document.querySelectorAll(".conference-pin").forEach((candidate) => {
+        if (candidate !== pin) {
+          candidate.setAttribute("aria-pressed", "false");
+          candidate.classList.remove("is-selected");
+        }
+      });
+
+      pin.setAttribute("aria-pressed", "true");
+      pin.classList.add("is-selected");
+
+      document.getElementById("conference-type").textContent = pin.dataset.type;
+      document.getElementById("conference-date").textContent = pin.dataset.date;
+      document.getElementById("conference-title").textContent = pin.dataset.title;
+      document.getElementById("conference-event").textContent = pin.dataset.event;
+      document.getElementById("conference-location").textContent = pin.dataset.location;
+      document.getElementById("conference-award").textContent = pin.dataset.award
+        ? `${pin.dataset.award}.`
+        : "";
+    }
+
+    document.querySelectorAll(".conference-pin").forEach((pin) => {
+      pin.addEventListener("click", () => selectConferencePin(pin));
+    });
+
+    function showProjectModal(id) {
+      document.getElementById(id).style.display = "grid";
+      document.body.style.overflow = "hidden";
+    }
+
+    function hideProjectModal(id) {
+      document.getElementById(id).style.display = "none";
+      document.body.style.overflow = "";
+    }
+
+    function openModal() { showProjectModal("projectModal"); }
+    function closeModal() { hideProjectModal("projectModal"); }
+
+    function openModal2() { showProjectModal("projectModal2"); }
+    function closeModal2() { hideProjectModal("projectModal2"); }
+
+    function openModal3() { showProjectModal("projectModal3"); }
+    function closeModal3() { hideProjectModal("projectModal3"); }
+
+    function openModal4() { showProjectModal("projectModal4"); }
+    function closeModal4() { hideProjectModal("projectModal4"); }
+
+    function openModal5() { showProjectModal("projectModal5"); }
+    function closeModal5() { hideProjectModal("projectModal5"); }
+
+    function openModal6() { showProjectModal("projectModal6"); }
+    function closeModal6() { hideProjectModal("projectModal6"); }
+
+    window.onclick = function(event) {
+      const modals = [
+        "projectModal", "projectModal2", "projectModal3", "projectModal4",
+        "projectModal5", "projectModal6"
+      ];
+      modals.forEach(id => {
+        const modal = document.getElementById(id);
+        if (event.target === modal) hideProjectModal(id);
+      });
+    };
+  </script>
 </body>
 </html>
